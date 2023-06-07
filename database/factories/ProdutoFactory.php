@@ -22,7 +22,7 @@ class ProdutoFactory extends Factory
         $nome = $this->faker->unique()->sentence();
         return [
             'nome'=> $nome,
-            'descrição' => $this->faker->paragraph(),
+            'desccricao' => $this->faker->paragraph(),
             'preco' => $this->faker->randomNumber(2),
             'slug' => Str::slug($nome),
             'imagem' => $this->faker->imageUrl(400,400),
